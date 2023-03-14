@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("./fonts/NeueMontreal-Regular.otf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        font-family: 'Neue Montreal';
+    }
+}
+@layer components{
+
+    .homebg{
+        @apply py-7 px-4 min-h-screen w-auto bg-[url('/images/Hero-Section-Design.png')]
+    }
+    .login{
+        @apply font-NeueMontreal text-[16px] leading-[26px] text-black border border-gray-600 py-2 px-4 rounded-sm  hover:bg-logbtn hover:text-white
+    }
+    .themebtn{
+        @apply bg-white  text-[18px] font-normal rounded-md px-8 py-4 font-NeueMontreal
+    }
+    .menu-item{
+        @apply text-languagefont text-base hover:text-white transform hover:scale-105 duration-500
+    }
+
+    .singleitem{
+        @apply py-5 px-5 bg-itembg rounded-xl mb-[30px] shadow-md w-[400px] h-[225px]
+    }
+
+    .itemhv{
+        @apply transform hover:scale-105 duration-500 hover:bg-[#f6eed4]
+    }
+
+   .peragrp{
+       @apply pt-8 text-center text-languagefont font-NeueMontreal text-lg font-normal  transform hover:scale-105 duration-500
+   }
+
+   .Dialect{
+        @apply bg-white py-3 px-8 justify-center text-center  text-7xl font-medium rounded-[22px] font-NeueMontreal
+   }
+
+   .language{
+        @apply bg-language text-languagefont py-5 px-8 justify-center text-center text-7xl font-bold rounded-[22px]
+   }
+
+   .learning{
+        @apply bg-white py-5 px-8 justify-center text-center text-7xl font-medium rounded-[22px] ml-5 
+   }
+   .Spanich{
+        @apply max-w-[172px] max-h-[58px] rounded-md text-[18px] font-medium font-NeueMontreal px-8 py-4 outline-none
+   }
+
+   .Start{
+        @apply text-white bg-languagefont rounded-md text-[18px] font-medium font-NeueMontreal px-8 py-4 ml-5 
+   }
+
+   .itemp{
+        @apply text-pgraph font-normal text-lg py-3
+   }
+
+   .itempspan{ 
+        @apply text-languagefont font-bold
+   }
+
+   .futarli{
+        @apply font-NeueMontreal font-normal text-lg text-pgraph pb-5
+   }
+   .futarheadding{
+        @apply pb-8 font-NeueMontreal text-languagefont font-bold text-[22px] leading-[32px]
+   }
+
+   .sliderhv{
+    @apply bg-white py-5 px-5 rounded-xl  transform hover:scale-105 duration-500 hover:bg-[#ffffff]
+
+  }
+
+    .futtaricon{
+        @apply group-hover:bg-language bg-languagefont rounded-[50px] w-[40px] h-[40px] mr-8 text-languagefont flex justify-center items-center
+    }
+
+    .togalli{
+        @apply py-2 mb-3 text-[18px] font-normal hover:bg-white hover:text-languagefont
+    }
+
+
+
+}
+@layer utilities {
+    .owl-carousel .owl-item img {
+        width: 35px;
+    }
+  }
+
+
+

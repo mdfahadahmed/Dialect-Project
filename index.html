@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialect Projct</title>
+
+    <!-- google fonts ( Neue Montreal ) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- fontawesome -->
+    <link
+      rel="https://kit.fontawesome.com/4caba71c00.js"
+      crossorigin="anonymous" />
+
+    <!-- owl-carousel-csss -->
+    <link rel="stylesheet" href="./src/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./src/owl.theme.default.min.css" />
+
+    <!-- app.css -->
+    <link rel="stylesheet" href="./src/app.css" />
+
+
+  <style>
+
+  #toggle {
+    width: 28px;
+    height: 30px;
+    margin: 10px auto;
+    z-index: 000;
+    background: red;
+    position: absolute;
+    margin-left: 95px;
+ }
+  
+  #toggle div {
+    width: 100%;
+    height: 5px;
+    background: white;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+  
+  #toggle.on .one {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #toggle.on .two {
+    opacity: 0;
+  }
+  
+  #toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  
+  #menu {
+    color: white;
+    border: 1px solid white;
+    width: 150px;
+    height: auto;
+    padding: 20px 0px;
+    border-radius: 3px;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    line-height: 100%;
+    text-align: center;
+    margin: auto;
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    /* margin-left: -270px; */
+    z-index: 9999;
+    /* background: #fff; */
+    left: 0;
+    right: 0;
+}
+  </style>
+
+
+  </head>
+  <body>
+    <!-- main div -->
+    <div
+      class="homebg relative">
+      <div class="container  flex justify-between m-auto">
+        <!-- logo-content (header) -->
+          <div class="logo w-24 flex justify-evenly">
+            <img class="h-7 w-7" src="./images/logo.png" />
+            <h2 class="font-normal text-[24px] text-[#003D31] -mt-1 ml-2">
+              dialect
+            </h2>
+          </div>
+          <!-- manu-content (header) -->
+  
+            <div class="">
+  
+              <div class="max-[520px]:block hidden">
+                <div id="toggle">
+                  <div class="one"></div>
+                  <div class="two"></div>
+                  <div class="three"></div>
+                </div>
+              </div>
+              
+              <div id="menu" class="items-center m-auto bg-logbtn bg-opacity-75">
+                <ul>
+                  <li class="togalli ">
+                    <a href="#">How it Works</a>
+                  </li>
+                  <li class="togalli ">
+                    <a href="#">Reviews</a>
+                  </li>
+                  <li class="togalli ">
+                    <a href="#">Live Lesson</a>
+                  </li>
+                  <li class="togalli">
+                    <a href="#">Pricing</a>
+                  </li>
+                  <div class="max-[520px]:flex max-[520px]:justify-around">
+                    <li>
+                      <a href="#" class="login hover:bg-[#003D31]">Log In</a>
+                    </li>
+                    <li>
+                      <a href="#" class="login bg-[#003D31] text-white">Sign Up</a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+
+        <div>
+          <div class="max-[520px]:hidden sm:block ">
+            <ul class="flex  justify-between w-96 font-NeueMontreal">
+              <li><a href="#" class="menu-item">How it Works</a></li>
+              <li><a href="#" class="menu-item">Reviews</a></li>
+              <li><a href="#" class="menu-item">Live Lesson</a></li>
+              <li><a href="#" class="menu-item">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- button (header) -->
+
+        <div class="max-[520px]:hidden sm:block">
+          <ul class="flex justify-evenly w-56">
+            <li>
+              <a href="#" class="login hover:bg-[#003D31]">Log In</a>
+            </li>
+            <li>
+              <a href="#" class="login bg-[#003D31] text-white">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- main (header) content -->
+      <div class="py-32 w-full">
+        <div class="m-auto justify-center">
+          <div class="justify-center max-w-[505px] max-h-[115px] pb-6 m-auto">
+            <h3 class="Dialect max-[520px]:text-[40px]">Dialect brings</h3>
+          </div>
+
+          <div class="flex justify-center m-auto">
+            <div class="flex">
+              <div class="max-w-[378px] max-h-[114px] ">
+                <h4 class="language  max-[520px]:text-[30px]">language</h4>
+              </div>
+              <div class="max-w-[328px] max-h-[114px]">
+                <h5 class="learning  max-[520px]:text-[30px]">learning</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="max-w-[570px] m-auto">
+            <p class="peragrp  max-[520px]:text-base">
+              Learn a language right here with hundreds of free
+              language-learning lessons. Get access to compact lessons from the
+              experts and connect with a community of native speakers to help
+              you master words faster.
+            </p>
+          </div>
+
+          <div class="pt-12 justify-center flex m-auto">
+            <form action="" method="get">
+              <select name="language" class="Spanich">
+                <option value="spanich">Spanich</option>
+                <option value="English">English</option>
+                <option value="Mexican">Maxican</option>
+                <option value="Mexican">Română</option>
+                <option value="Mexican">Français</option>
+                <option value="Mexican">Español</option>
+                <option value="Mexican">Italiano</option>
+                <option value="Mexican">中文</option>
+                <option value="Mexican">Čeština</option>
+              </select>
+              <input
+                class="Start cursor-pointer"
+                type="submit"
+                value="Start learning" />
+            </form>
+          </div>
+
+          <!-- <div class="absolute    justify-center m-auto">
+                <img class="max-w-[16px] max-h-[16px] " src="images/Ellipse-btn-logo.png" alt="#">
+            </div> -->
+        </div>
+      </div>
+      <!-- position image content -->
+      <div class="flex justify-between">
+        <div class=" ">
+          <img
+            class="h-24 w-24 transform hover:scale-105 duration-500"
+            src="images/Illustrations-2 UIHUT.png" />
+        </div>
+
+        <div class=" ">
+          <img
+            class="h-24 w-24 transform hover:scale-105 duration-500"
+            src="images/Illustrations-1 UIHUT.png"
+            alt="#" />
+        </div>
+      </div>
+    </div>
+    <!-- 2nd section -->
+    <div class="container py-24 m-auto">
+      <div class="flex  max-[520px]:block">
+        <!-- image -->
+        <div class="col-md-6 w-full m-auto">
+          <img
+            class="max-w-full max-h-full m-auto   max-[520px]:w-full"
+            src="images/014.png"
+            alt="#" />
+        </div>
+        <!-- world’s #1 -->
+        <div class="col-md-6 w-full pl-20 pt-10 max-[520px]:pl-5">
+          <div>
+            <h1 class="font-bold text-[46px] text-languagefont leading-[52px] max-[520px]:text-[30px] max-[520px]:leading-[35px]">
+              The <span class="text-themecolor">world’s #1</span> way to learn a
+              language
+            </h1>
+          </div>
+          <div class="pt-10 pr-20 max-[520px]:pr-5">
+            <div class="">
+              <p class="text-pgraph text-[18px] font-normal leading-[28px] max-[520px]:text-base">
+                Learning with us is fun, and research shows that it works! With
+                quick, bite-sized lessons, you’ll earn points and unlock new
+                levels while gaining real-world communication skills.
+              </p>
+            </div>
+            <div class="pt-4">
+              <p class="text-pgraph text-[18px] font-normal leading-[28px]">
+                Learn a language right here with hundreds of free
+                language-learning lessons. Get access to compact lessons from
+                the experts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 3d section -->
+    <div class="container py-20 m-auto max-[520px]:py-0">
+      <!-- changing content headding -->
+      <div class="py-8 pb-16 max-[520px]:py-0 max-[520px]:pb-5">
+        <h1
+          class="text-languagefont font-bold text-[46px] text-center leading-[52px] max-[520px]:text-[30px] max-[520px]:leading-[40px]">
+          <span2 class="text-themecolor">Changing </span2>the way people<br />
+          learn new languages
+        </h1>
+      </div>
+      <div class="py-6">
+        <div class="flex justify-evenly max-[520px]:block max-[520px]:px-3">
+          <!-- single item -->
+          <div class="singleitem itemhv max-[520px]:w-full">
+            <div class="pb-7">
+              <img
+                class="h-[60px] w-[auto]"
+                src="images/item-img-1.png"
+                alt="#" />
+            </div>
+            <div class="">
+              <p class="itemp">
+                More than
+                <span class="itempspan">1000 language combinations </span>so you
+                can learn from your native language
+              </p>
+            </div>
+          </div>
+
+          <div class="singleitem itemhv  max-[520px]:w-full">
+            <div class="pb-7">
+              <img
+                class="h-[60px] w-[auto]"
+                src="images/item-img-2.png"
+                alt="#" />
+            </div>
+            <div class="">
+              <p class="itemp">
+                <span class="itempspan">50 topics</span> to prepare you for the
+                most common situations
+              </p>
+            </div>
+          </div>
+
+          <div class="singleitem itemhv  max-[520px]:w-full">
+            <div class="pb-7">
+              <img
+                class="h-[60px] w-[auto]"
+                src="images/item-img-3.png"
+                alt="#" />
+            </div>
+            <div class="">
+              <p class="itemp">
+                <span class="itempspan">36 vocabulary builders</span> to install
+                words fast for constant improvement
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-evenly max-[520px]:block max-[520px]:px-3">
+          <div class="singleitem itemhv  max-[520px]:w-full">
+            <div class="pb-7">
+              <img
+                class="h-[60px] w-[auto]"
+                src="images/item-img-4.png"
+                alt="#" />
+            </div>
+            <div class="">
+              <p class="itemp">
+                <span class="itempspan">41 real conversations </span>to give you
+                fluency in learning languages
+              </p>
+            </div>
+          </div>
+
+          <div class="singleitem itemhv  max-[520px]:w-full">
+            <div class="pb-7">
+              <img
+                class="h-[60px] w-[auto]"
+                src="images/item-img-5.png"
+                alt="#" />
+            </div>
+            <div class="">
+              <p class="itemp">
+                <span class="itempspan"
+                  >Grammar features & conjugation tables </span
+                >to shortcut your progress
+              </p>
+            </div>
+          </div>
+
+          <div class="singleitem itemhv  max-[520px]:w-full">
+            <div class="pb-7">
+              <img
+                class="h-[60px] w-[auto]"
+                src="images/item-img-6.png"
+                alt="#" />
+            </div>
+            <div class="">
+              <p class="itemp">
+                Quick <span class="itempspan">Daily Lessons </span>for constant
+                improvement
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div></div>
+      </div>
+    </div>
+    <!--section No-4 -->
+    <div class="container py-20 m-auto  max-[520px]:py-8">
+      <div class="flex  max-[520px]:block">
+        <div class="col-md-6 w-full m-auto px-6 max-[520px]:pb-8">
+          <div class="">
+            <h1
+              class="text-languagefont font-bold text-[46px] leading-[52px] pr-32  max-[520px]:text-[30px] max-[520px]:leading-[40px] max-[520px]:pr-0">
+              Boost your learning with
+              <span class="text-themecolor">Dialect </span>plus
+            </h1>
+          </div>
+          <div class="py-5">
+            <p class="text-pgraph text-lg font-normal w-[570px]  max-[520px]:w-full">
+              Learning with us is fun, and research shows that it works!
+              Learning a language on Dialect is completely free, but you can
+              remove ads and make faster progress with Plus. Try it free for 14
+              days!
+            </p>
+          </div>
+          <div class="py-5">
+            <a
+              class="bg-language text-languagefont px-8 py-4 rounded-md text-lg font-medium hover:text-black hover:bg-themecolor"
+              href="#"
+              >Start Lerning</a
+            >
+          </div>
+        </div>
+        <div class="col-md-6 w-full m-auto max-[520px]:px-3">
+          <img class="m-auto max-[520px]:w-full" src="images/Illustration.png" alt="#" />
+        </div>
+      </div>
+    </div>
+    <!-- section No-5 -->
+    <div class="py-10 max-[520px]:px-3">
+      <div class="max-w-full max-h-[246px] bg-duby  max-[520px]:w-full ">
+        <div class="flex justify-between m-auto px-6 py-28  max-[520px]:block  max-[520px]:py-8 ">
+          <div class="max-[520px]:pb-3">
+            <img
+              class="w-[34px] h-[35px] bg-duby"
+              src="images/Union1.png"
+              alt="#" />
+          </div>
+          <div class="">
+            <h1 class="font-bold text-4xl text-[#003D31] font-NeueMontreal  max-[520px]:text-[20px] ">
+              70,000 lessons taught
+            </h1>
+          </div>
+          <div>
+            <h1 class="font-bold text-4xl text-[#003D31] font-NeueMontreal  max-[520px]:text-[20px]">
+              40,000+ students enrolled
+            </h1>
+          </div>
+          <div>
+            <h1 class="font-bold text-4xl text-[#003D31] font-NeueMontreal  max-[520px]:text-[20px]">
+              11 languages
+            </h1>
+          </div>
+          <div class="py-3">
+            <img class="w-[34px] h-[35px] bg-duby" src="images/Union2.png" alt="#" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section No-6 -->
+    <div class="container py-[100px] m-auto  max-[520px]:py-0">
+      <div class="py-5">
+        <div class="pb-5">
+          <h1
+            class="text-center font-bold text-[46px] leading-[52px] text-languagefont font-NeueMontreal  max-[520px]:text-[30px] ">
+            People love<span class="text-themecolor"> Dialect</span>
+          </h1>
+        </div>
+        <div class="">
+          <p
+            class="font-NeueMontreal text-pgraph font-normal text-lg text-center w-[550px] m-auto max-[520px]:text-start  max-[520px]:px-3 max-[520px]:w-full max-[520px]:text-base">
+            Learning with us is fun, and research shows that it works! Learning
+            a language on Dialect is completely free.
+          </p>
+        </div>
+      </div>
+      <div class="py-5">
+        <div id="demo">
+          <!-- The slideshow/Single item -->
+          <div class="owl-carousel max-[520px]:border-y-2">
+
+            <div class="w-96 py-6 px-5 rounded-[12px]  hover:bg-slate-300">
+              <div class="sliderhv">
+                <div class="flex py-5">
+                  <div
+                    class="bg-itembg h-[60px] w-[60px] rounded-full flex justify-center items-center">
+                    <img class="max-w-full" src="images/1outline.png" alt="#" />
+                  </div>
+                  <div class="ml-4">
+                    <div class="">
+                      <h3
+                        class="text-languagefont font-NeueMontreal font-bold text-lg">
+                        Moskur Alam
+                      </h3>
+                    </div>
+                    <div class="">
+                      <p
+                        class="font-NeueMontreal text-[14px] leading-[24px] font-normal text-pgraph">
+                        CEO of Web Design
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-5">
+                  <p
+                    class="font-NeueMontreal text-[16px] leading-[26px] font-normal text-pgraph">
+                    Dialect is excellent - short and sweet and effective lessons
+                    and great quick review which is key to remembering. I love
+                    it! I’m learning Dutch!! I enjoy the dialogues and
+                    scenarios, which include helpful phrases that can be used in
+                    various situations.
+                  </p>
+                </div>
+                <div class="pt-5">
+                  <div class="flex">
+                    <div>
+                      <img src="images/Group17827.png" alt="#" />
+                    </div>
+                    <div class="m-auto">
+                      <div class="h-[2px] w-[250px] bg-divaider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-96 py-6 px-5 rounded-[12px]  hover:bg-slate-300">
+              <div class="sliderhv">
+                <div class="flex py-5">
+                  <div
+                    class="bg-itembg h-[60px] w-[60px] rounded-full flex justify-center items-center">
+                    <img class="" src="images/2outline.png" alt="#" />
+                  </div>
+                  <div class="ml-4">
+                    <div class="">
+                      <h3
+                        class="text-languagefont font-NeueMontreal font-bold text-lg">
+                        Moskur Alam
+                      </h3>
+                    </div>
+                    <div class="">
+                      <p
+                        class="font-NeueMontreal text-[14px] leading-[24px] font-normal text-pgraph">
+                        CEO of Web Design
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-5">
+                  <p
+                    class="font-NeueMontreal text-[16px] leading-[26px] font-normal text-pgraph">
+                    Dialect is excellent - short and sweet and effective lessons
+                    and great quick review which is key to remembering. I love
+                    it! I’m learning Dutch!! I enjoy the dialogues and
+                    scenarios, which include helpful phrases that can be used in
+                    various situations.
+                  </p>
+                </div>
+                <div class="pt-5">
+                  <div class="flex">
+                    <div>
+                      <img src="images/Group17827.png" alt="#" />
+                    </div>
+                    <div class="m-auto">
+                      <div class="h-[2px] w-[250px] bg-divaider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-96 py-6 px-5 rounded-[12px]  hover:bg-slate-300">
+              <div class="sliderhv">
+                <div class="flex py-5">
+                  <div
+                    class="bg-itembg h-[60px] w-[60px] rounded-full flex justify-center items-center">
+                    <img class="" src="images/3outline.png" alt="#" />
+                  </div>
+                  <div class="ml-4">
+                    <div class="">
+                      <h3
+                        class="text-languagefont font-NeueMontreal font-bold text-lg">
+                        Moskur Alam
+                      </h3>
+                    </div>
+                    <div class="">
+                      <p
+                        class="font-NeueMontreal text-[14px] leading-[24px] font-normal text-pgraph">
+                        CEO of Web Design
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-5">
+                  <p
+                    class="font-NeueMontreal text-[16px] leading-[26px] font-normal text-pgraph">
+                    Dialect is excellent - short and sweet and effective lessons
+                    and great quick review which is key to remembering. I love
+                    it! I’m learning Dutch!! I enjoy the dialogues and
+                    scenarios, which include helpful phrases that can be used in
+                    various situations.
+                  </p>
+                </div>
+                <div class="pt-5">
+                  <div class="flex">
+                    <div>
+                      <img src="images/Group17827.png" alt="#" />
+                    </div>
+                    <div class="m-auto">
+                      <div class="h-[2px] w-[250px] bg-divaider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-96 py-6 px-5 rounded-[12px]  hover:bg-slate-300">
+                <div class="sliderhv">
+                  <div class="flex py-5">
+                    <div
+                      class="bg-itembg h-[60px] w-[60px] rounded-full flex justify-center items-center">
+                      <img class=" " src="images/1outline.png" alt="#" />
+                    </div>
+                    <div class="ml-4">
+                      <div class="">
+                        <h3
+                          class="text-languagefont font-NeueMontreal font-bold text-lg">
+                          Moskur Alam
+                        </h3>
+                      </div>
+                      <div class="">
+                        <p
+                          class="font-NeueMontreal text-[14px] leading-[24px] font-normal text-pgraph">
+                          CEO of Web Design
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-5">
+                    <p
+                      class="font-NeueMontreal text-[16px] leading-[26px] font-normal text-pgraph">
+                      Dialect is excellent - short and sweet and effective lessons
+                      and great quick review which is key to remembering. I love
+                      it! I’m learning Dutch!! I enjoy the dialogues and
+                      scenarios, which include helpful phrases that can be used in
+                      various situations.
+                    </p>
+                  </div>
+                  <div class="pt-5">
+                    <div class="flex">
+                      <div>
+                        <img src="images/Group17827.png" alt="#" />
+                      </div>
+                      <div class="m-auto">
+                        <div class="h-[2px] w-[250px] bg-divaider"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="w-96 py-6 px-5 rounded-[12px]  hover:bg-slate-300">
+                <div class="sliderhv">
+                  <div class="flex py-5">
+                    <div
+                      class="bg-itembg h-[60px] w-[60px] rounded-full flex justify-center items-center">
+                      <img class=" " src="images/3outline.png" alt="#" />
+                    </div>
+                    <div class="ml-4">
+                      <div class="">
+                        <h3
+                          class="text-languagefont font-NeueMontreal font-bold text-lg">
+                          Moskur Alam
+                        </h3>
+                      </div>
+                      <div class="">
+                        <p
+                          class="font-NeueMontreal text-[14px] leading-[24px] font-normal text-pgraph">
+                          CEO of Web Design
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-5">
+                    <p
+                      class="font-NeueMontreal text-[16px] leading-[26px] font-normal text-pgraph">
+                      Dialect is excellent - short and sweet and effective lessons
+                      and great quick review which is key to remembering. I love
+                      it! I’m learning Dutch!! I enjoy the dialogues and
+                      scenarios, which include helpful phrases that can be used in
+                      various situations.
+                    </p>
+                  </div>
+                  <div class="pt-5">
+                    <div class="flex">
+                      <div>
+                        <img src="images/Group17827.png" alt="#" />
+                      </div>
+                      <div class="m-auto">
+                        <div class="h-[2px] w-[250px] bg-divaider"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="w-96 py-6 px-5 rounded-[12px]  hover:bg-slate-300">
+              <div class="sliderhv">
+                <div class="flex py-5">
+                  <div
+                    class="bg-itembg h-[60px] w-[60px] rounded-full flex justify-center items-center">
+                    <img class="" src="images/2outline.png" alt="#" />
+                  </div>
+                  <div class="ml-4">
+                    <div class="">
+                      <h3
+                        class="text-languagefont font-NeueMontreal font-bold text-lg">
+                        Moskur Alam
+                      </h3>
+                    </div>
+                    <div class="">
+                      <p
+                        class="font-NeueMontreal text-[14px] leading-[24px] font-normal text-pgraph">
+                        CEO of Web Design
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-5">
+                  <p
+                    class="font-NeueMontreal text-[16px] leading-[26px] font-normal text-pgraph">
+                    Dialect is excellent - short and sweet and effective lessons
+                    and great quick review which is key to remembering. I love
+                    it! I’m learning Dutch!! I enjoy the dialogues and
+                    scenarios, which include helpful phrases that can be used in
+                    various situations.
+                  </p>
+                </div>
+                <div class="pt-5">
+                  <div class="flex">
+                    <div>
+                      <img src="images/Group17827.png" alt="#" />
+                    </div>
+                    <div class="m-auto">
+                      <div class="h-[2px] w-[250px] bg-divaider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Left and right controls/icons -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <!-- section No-7 -->
+    <div class="pt-10 max-[520px]:pt-0">
+      <div class="bg-themecolor">
+        <div class="container py-28 m-auto">
+          <div class="flex justify-around max-[520px]:block max-[520px]:px-3">
+            <div class="col-md-6">
+              <div class="bg-white rounded-[12px] max-w-[373px] py-5 mb-5 ">
+                <h1
+                  class="font-NeueMontreal font-medium text-[46px] leading-[52px] text-languagefont text-center max-[520px]:text-[30px]">
+                  Thinking about
+                </h1>
+              </div>
+              <div class="bg-language rounded-[12px] max-w-[472px] py-5 px-9">
+                <h1
+                  class="font-NeueMontreal font-bold text-[46px] leading-[52px] text-languagefont text-center max-[520px]:text-[30px]">
+                  language learning?
+                </h1>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="py-5">
+                <p
+                  class="font-NeueMontreal text-languagefont font-normal text-lg w-[555px] max-[520px]:w-full max-[520px]:text-base">
+                  Learn a language right here with hundreds of free
+                  language-learning lessons. Get access to compact lessons from
+                  the experts and connect with a community of native speakers to
+                  help you master words faster.
+                </p>
+              </div>
+              <div>
+                <div class="pt-8 flex">
+                  <form action="" method="get">
+                    <select name="language" class="Spanich">
+                      <option value="spanich">Spanich</option>
+                      <option value="English">Français</option>
+                      <option value="Mexican">Română</option>
+                      <option value="Mexican">Français</option>
+                      <option value="Mexican">Español</option>
+                      <option value="Mexican">Deutsch</option>
+                      <option value="Mexican">Русский</option>
+                      <option value="Mexican">Italiano</option>
+                      <option value="Mexican">中文</option>
+                      <option value="Mexican">Čeština</option>
+                    </select>
+                    <input
+                      class="Start cursor-pointer"
+                      type="submit"
+                      value="Start learning" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section No-8 -->
+    <div class="py-20 border-b-2 bg-itembg max-[520px]:py-8 max-[520px]:px-3">
+      <div class="pb-5">
+        <h1
+          class="font-NeueMontreal font-bold text-[46px] leading-[52px] text-languagefont text-center  max-[520px]:text-[35px]">
+          Have any<span class="text-themecolor"> questions</span>?
+        </h1>
+      </div>
+      <div class="justify-center text-center ">
+        <a href="#"
+          class="font-NeueMontreal text-pgraph font-normal text-lg text-center leading-7 max-[520px]:text-base">
+          Visit our<span
+            class="text-[#003D31] font-medium underline underline-offset-4">
+            FAQ page</span
+          >
+          or email us at<span
+            class="text-[#003D31] font-medium underline underline-offset-4">
+            youremail@gmail.com.</span
+          >
+        </a>
+      </div>
+    </div>
+    <!-- section No-9 -->
+    <div class="py-20 bg-itembg border-b-2 max-[520px]:py-8 max-[520px]:px-5">
+      <div class="container flex justify-evenly m-auto max-[520px]:block ">
+        <div class="max-[520px]:text-center">
+          <h2 class="futarheadding">Dialect</h2>
+          <ul>
+            <li class="futarli">About us</li>
+            <li class="futarli">Careers</li>
+            <li class="futarli">Dialect Blog</li>
+            <li class="futarli">Press</li>
+          </ul>
+        </div>
+
+        <div class="max-[520px]:text-center">
+          <h2 class="futarheadding">Learn More</h2>
+          <ul>
+            <li class="futarli">Learn English</li>
+            <li class="futarli">Learn French</li>
+            <li class="futarli">Learn Spanish</li>
+            <li class="futarli">Learn German</li>
+            <li class="futarli">Learn Russian</li>
+            <li class="futarli">Learn Italian</li>
+            <li class="futarli">Learn Portuguese</li>
+            <li class="futarli">Learn Turkish</li>
+            <li class="futarli">Learn Chinese</li>
+            <li class="futarli">Learn Arabic</li>
+            <li class="futarli">Learn Japanese</li>
+          </ul>
+        </div>
+
+        <div class="max-[520px]:text-center">
+          <h2 class="futarheadding">Products</h2>
+          <ul>
+            <li class="futarli">Dialect</li>
+            <li class="futarli">Dialect for Businesses</li>
+            <li class="futarli">Dialect Kids</li>
+            <li class="futarli">Dialect VR</li>
+            <li class="futarli">Dialect AR</li>
+          </ul>
+        </div>
+
+        <div class="max-[520px]:text-center">
+          <h2 class="futarheadding">Support</h2>
+          <ul>
+            <li class="futarli">Contact</li>
+            <li class="futarli">Privacy</li>
+            <li class="futarli">Terms</li>
+            <li class="futarli">Affiliate Program</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- futter  -->
+    <div class="bg-itembg">
+      <div class="container py-10 m-auto">
+        <div>
+          <h2 class="futarheadding max-[520px]:text-center">Site language</h2>
+        </div>
+        <div class="py-10px">
+          <ul class="flex max-[520px]:block max-[520px]:text-center">
+            <li class="futarli mr-4">Română</li>
+            <li class="futarli mr-4">Français</li>
+            <li class="futarli mr-4">Español</li>
+            <li class="futarli mr-4">Deutsch</li>
+            <li class="futarli mr-4">Русский</li>
+            <li class="futarli mr-4">Italiano</li>
+            <li class="futarli mr-4">Français</li>
+            <li class="futarli mr-4">中文</li>
+            <li class="futarli mr-4">Čeština</li>
+          </ul>
+        </div>
+        <div class="flex justify-between py-10  max-[520px]:block max-[520px]:pb-0">
+          <div>
+            <p
+              class="font-NeueMontreal text-pgraph font-normal text-[16px] leading-[26px] max-[520px]:text-center">
+              Copyright @UIHUT 2022
+            </p>
+          </div>
+
+          <div>
+            <ul class="flex max-[520px]:justify-center max-[520px]:py-8 max-[520px]:ml-8">
+              <li class="group">
+                <a href="" class=" futtaricon">
+                  <i class="group-hover:text-languagefont fa-brands fa-facebook-f text-white"></i>
+
+                </a>
+              </li>
+              <li class="group">
+                <a href="" class=" futtaricon">
+                  <i class="group-hover:text-languagefont fa-brands fa-linkedin-in text-white"></i>
+
+                </a>
+              </li>
+              <li class="group">
+                <a href="" class=" futtaricon">
+                  <i class="group-hover:text-languagefont fa-brands fa-twitter text-white"></i>
+
+                </a>
+              </li>
+           
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <script
+      src="https://kit.fontawesome.com/4caba71c00.js"
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- owl.carousel -->
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+<!-- toggle mamu js -->
+    <script>
+    $("#toggle").click(function() {
+        $(this).toggleClass("on");
+        $("#menu").slideToggle();
+    });
+    </script>
+
+<!-- slider -->
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+
+          loop:true,
+          margin:10,
+          responsiveClass:true,
+          nav: false,
+          dots: true,
+          autoplay:false,
+          autoplayTimeout:2500,
+          autoplayHoverPause:false,
+          responsive:{
+            0:{
+                  items:1
+              },
+            600:{
+                  items:1
+              },
+            768:{
+                  items:2
+              },
+            1000:{
+                  items:3
+              }
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>
